@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 1.2em;
+}
+
+body {
+    height: 100dvh;
+    width: 100dvw;
+    padding-top: 2%;
+}
+
+main {
+    height: 80%;
+    width: 100%;
+}
+
+.contenedor-pokemon {
+    height: 45dvh;
+    width: 45dvh;
+    margin: 0px auto 0px auto;
+    border: #aeaeae 5px outset;
+    padding: 4px;
+}
+img {
+    height: 100%;
+    width: 100%;
+}
+input {
+    border: 2px #aeaeae outset;
+    text-align: center;
+    width: 80%;
+}
+
+output {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.textoOutput {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contenedor-respuesta, .contenedor-puntuacion {
+    width: fit-content;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 20px auto 0px auto;
+    flex-wrap: wrap;
+}
+
+.volverAJugar{
+    height: fit-content;
+    width: fit-content;
+    margin: auto 0px auto 0px;
+}
+.github {
+    margin: auto 0px auto 0px;
+}
+
+button {
+    padding: 4px;
+    height: fit-content;
+    margin: auto 0px auto 0px;
+}
+.retry {
+    margin: auto 0px auto 0px;
+}
+
+footer {
+    width: 100%;
+    bottom: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    position: absolute;
+    padding: 1%;
+    flex-wrap: wrap;
+}
+
+@media only screen and (max-width: 600px) {
+    .contenedor-pokemon {
+        height: 40dvh;
+        width: 40dvh;
+        margin: 0px auto 0px auto;
+        border: #aeaeae 3px outset;
+        padding: 4px;
+    }
+}
+@media only screen and (max-height: 600px) {
+    .contenedor-pokemon {
+        height: 30dvw;
+        width: 30dvw;
+    }
+    main {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+}
