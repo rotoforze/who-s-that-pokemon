@@ -100,7 +100,7 @@ function adivinar() {
             establecerPokemon();
         }else {
             contador++;
-            if (campoAdivinar.value == nombrePokemon) {
+            if (campoAdivinar.value.toLowerCase() == nombrePokemon) {
                 ganar();
             }else {
                 seguir();
